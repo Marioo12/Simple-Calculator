@@ -1,0 +1,122 @@
+      /* Gaya dasar untuk body agar kalkulator berada di tengah halaman */
+      body {
+        background-image: url(Math.jpg);
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      /* Gaya untuk kotak kalkulator */
+      .Calculator {
+        background-color: rgb(142, 201, 53);
+        padding: 20px;
+        width: 400px;
+        border-radius: 10px;
+        text-align: center;
+      }
+
+      /* Gaya untuk heading */
+      h1 {
+        font-size: 3rem;
+      }
+
+      /* Kontainer untuk input dan tombol */
+      .container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px; /* Jarak antar elemen */
+      }
+
+      /* Angka1,Angka2,operator */
+      label {
+        font-weight: bold;
+      }
+
+      /* Gaya untuk input dan dropdown */
+      input,
+      select {
+        width: 100%;
+        margin-top: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+
+      /* Ukuran khusus untuk input */
+      #angka1,
+      #angka2,
+      #operator {
+        height: 40px;
+        font-size: 1rem;
+      }
+
+      /* Gaya untuk tombol */
+      button {
+        padding: 10px;
+        background-color: #000000;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 130px;
+        height: 60px;
+        font-size: 1.6rem;
+      }
+
+      /* Efek hover untuk tombol */
+      button:hover {
+        background-color: #4d5c4e;
+      }
+
+      /* Gaya untuk popup */
+      .popup {
+        display: none; /* Awalnya popup disembunyikan */
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        z-index: 10; /* Popup berada di atas */
+      }
+
+      /* Konten di dalam popup */
+      .isi-popup {
+        text-align: center;
+      }
+
+      /* Gaya untuk heading di dalam popup */
+      .isi-popup h2 {
+        margin-bottom: 20px;
+      }
+
+      /* Gaya untuk tombol tutup di popup */
+      .isi-popup button {
+        padding: 10px;
+        background-color: red;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 200px;
+      }
+
+      /* Efek hover untuk tombol tutup */
+      .isi-popup button:hover {
+        background-color: #d43f3f;
+      }
+
+      /* Overlay untuk menggelapkan latar belakang saat popup muncul */
+      .overlay {
+        display: none; /* Awalnya overlay disembunyikan */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 5; /* Overlay berada di bawah popup */
+      }

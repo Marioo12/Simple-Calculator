@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Sederhana</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="JavaScript.js"></script>
+  </head>
+  <body>
+    <!-- Kotak kalkulator -->
+    <div class="Calculator">
+      <h1>Kalkulator <br />Sederhana</h1>
+      <div class="container">
+        <!-- Input untuk angka pertama -->
+        <div class="Angka1">
+          <label for="angka1">Angka 1</label>
+          <input type="text" id="angka1" placeholder="Masukan angka pertama" required />
+        </div>
+        <!-- Input untuk angka kedua -->
+        <div class="Angka2">
+          <label for="angka2">Angka 2</label>
+          <input type="text" id="angka2" placeholder="Masukan angka kedua" required />
+        </div>
+        <!-- Dropdown untuk memilih operator matematika -->
+        <div class="Operator">
+          <label for="operator">Operator</label>
+          <select id="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+          </select>
+        </div>
+        <!-- Tombol untuk melakukan perhitungan -->
+        <div class="Tombol">
+          <button onclick="hitung()">Hitung</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup untuk menampilkan hasil atau pesan error -->
+    <div id="popup" class="popup">
+      <div class="isi-popup">
+        <h2 id="hasil-popup"></h2>
+        <!-- Tempat hasil atau pesan error -->
+        <button onclick="closePopup()">Tutup</button>
+      </div>
+    </div>
+    <div id="overlay" class="overlay"></div>
+  </body>
+</html>
