@@ -1,4 +1,4 @@
-# Kalkulator Sederhana 🧮
+# Simple Calculator 🧮
 
 A simple calculator web app built as my HTML, CSS, and JavaScript practice project.
 
